@@ -10,7 +10,7 @@ import Search from "./Search";
 
 // OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=986aab81
 
-const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=986aab81"; // you should replace this with yours
+const MOVIE_API_URL = "https://www.omdbapi.com/?s='man'&apikey=986aab81";
 
 const App = () => {
 	const [loading, setLoading] = useState(true);
@@ -45,8 +45,8 @@ const App = () => {
 
 	return (
 		<div className="App">
-			<Header text="Movie Search" />
-			<Search search={search} />
+			<Header text="Movie Search" search={search} />
+			{/* <Search search={search} /> */}
 			<p className="App-intro">Sharing a few of our favourite movies</p>
 			<div className="movies">
 				{loading && !errorMessage ? (
