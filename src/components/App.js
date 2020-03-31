@@ -23,6 +23,7 @@ const App = () => {
 				setMovies(jsonResponse.Search);
 				setLoading(false);
 			});
+		document.title = "Movie Search";
 	}, []);
 
 	const search = searchValue => {
