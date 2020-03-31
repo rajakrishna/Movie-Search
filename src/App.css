@@ -89,6 +89,9 @@ input[type="submit"] {
   border-radius: 7px;
   font-size: 18px;
 }
+.search > input[type=text]:focus {
+  min-width: 300px;
+}
 
 input[type="submit"]:hover {
   background-color: #282c34;
@@ -97,10 +100,11 @@ input[type="submit"]:hover {
 
 .search > input[type="text"]{
   width: 70%;
-  min-width: 300px;
+  min-width: 200px;
   min-height: 30px;
   border:0px;
   border-radius: 7px;
+  transition: ease-in-out, min-width .30s ease-in-out;
 }
 
 @media screen and (min-width: 694px) and (max-width: 915px) {
